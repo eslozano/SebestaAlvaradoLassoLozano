@@ -90,21 +90,226 @@
 
 		\subsection{Capítulo 7: Expresiones e Instrucciones de asignación}	
 			\begin{itemize}
-				\item {\bf Pregunta 1}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 2}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 3}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 4}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 5}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 6}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 9}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaa
+				\item {\bf Pregunta 1: Run the code given in Problem 13 (in the Problem Set) on some system that supports C to determine the values of sum1 and sum2. Explain the results.}
+					\\El codigo:
+					\lstset{language=C,basicstyle=\small\sffamily,numbers=left,numberstyle=\tiny,frame=tb,columns=fullflexible,showstringspaces=false}
+					\begin{lstlisting}[frame=single]  % Start your code-block
+
+int fun(int *k) {
+	*k += 4;
+	return 3 * (*k) - 1;
+}
+
+void main() {
+	int i = 10, j = 10, sum1, sum2;
+	sum1 = (i / 2) + fun(&i);
+	sum2 = fun(&j) + (j / 2);
+}
+					\end{lstlisting}
+					Nos devuelve sum1 = 46 y sum2 = 48
+\begin{lstlisting}[frame=single]
+sum1 = (i/2) + fun(&i) = 5 + 41 = 46  
+//fun se calcula despues de obtener el valor de i/2
+sum2 = fun(&j) + (j/2) = 41 + 7 = 48  
+//fun se calcula antes de obtener el valor de j/2
+\end{lstlisting}
+					
+				\item {\bf Pregunta 2: Rewrite the program of Programming Exercise 1 in C++, Java, and C\#, run them, and compare the results}
+					\begin{itemize}
+						\item {Programa en C++, C\#}
+							\begin{lstlisting}[frame = single] 
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            int i = 10,j=10,sum1,sum2;
+            sum1 = (i / 2) + p.fun(ref i);
+            sum2 = p.fun(ref j) + (j / 2);
+            System.Console.WriteLine("sum1 = "+sum1);
+            System.Console.WriteLine("sum2 = " + sum2);
+            Console.Read();
+        }
+        public int fun(ref int k)
+        {
+            k = 4 + k;
+            return 3*(k) - 1;
+        }
+    }
+
+							\end{lstlisting}
+							El programa retorna el mismo resultado que C
+						\item {Programa en Java}
+\lstset{language = java} 
+\begin{lstlisting}[frame=single]
+public class TestLP {
+    public static void main(String[] args) {
+        TestLP test = new TestLP();
+        int i = 10, j = 10, sum1, sum2;
+        sum1 = (i / 2) + test.fun(i);
+        sum2 = test.fun(j) + (j / 2);
+        System.out.println("sum1= " + sum1);
+        System.out.println("sum2= " + sum2);
+    }    
+     public int fun(int k) {
+        k += 4;
+        return 3 * (k) - 1;
+    }
+}
+\end{lstlisting}
+							El programa retorna: sum1= 46 y sum2= 46, ya que no se pueden utilizar punteros en Java.
+					\end{itemize}
+				\item {\bf Pregunta 3: Write a test program in your favorite language that determines and outputs the precedence and associativity of its arithmetic and Boolean operators.}
+\begin{lstlisting}[frame=single]
+public class TestLP { 
+     public static void main(String[] args) {
+        boolean a;
+        double e;
+        a = true || false && false || false;
+        System.out.println(a);
+        a =false ||  true && false || false && false;
+        System.out.println(a);
+        e = 1 + 2 + 3 * 3 / 6.0;
+        System.out.println(e);
+        e = (1 + 2) + ((3 * 3) / 6.0);   
+        System.out.println(e);
+    }
+}
+\end{lstlisting}
+					Como resultado obtenemos lo siguiente por consola
+\begin{lstlisting}[frame=single]
+true
+false
+4.5
+4.5
+\end{lstlisting}
+					Lo que nos indica que en las operaciones booleanas el operador AND (\&\&) tiene mayor precedencia que el operador OR (||). En las operaciones aritmeticas el operador * tiene mayor precedencia que / y + 
+										
+				\item {\bf Pregunta 4: Write a Java program that exposes Java’s rule for operand evaluation order when one of the operands is a method call.}
+\begin{lstlisting}[frame=single]
+public class TestLP {
+    public static void main(String[] args) {
+        TestLP test = new TestLP();
+        int a = 0, c;
+        c = (a) + test.func(--a);
+        System.out.println("c = " + c);
+        System.out.println("a = " + a);
+        a = 0;
+        c = test.func(--a) + (a);
+        System.out.println("c = " + c);
+        System.out.println("a = " + a);
+    }
+    public int func(int c) {
+        return c + 10;
+    }
+}
+\end{lstlisting}
+					El programa retorna:
+\begin{lstlisting}[frame=single]
+c = 9
+a = -1
+c = 8
+a = -1
+\end{lstlisting}
+					Lo que nos muestra que las funciones se evaluan de izquierda a derecha
+				\item {\bf Pregunta 5: Repeat Programming Exercise 5 with C++.}
+					\lstset{language =[Sharp] C} 
+					\begin{lstlisting}[frame=single]
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            int a = 0, c;
+            c = (a) + p.func(--a);
+            System.Console.WriteLine("c = " + c);
+            System.Console.WriteLine("a = " + a);
+            a = 0;
+            c = p.func(--a) + (a);
+            System.Console.WriteLine("c = " + c);
+            System.Console.WriteLine("a = " + a);
+            Console.Read();
+        }
+        public int func(int c)
+        {
+            return c + 10;
+        }
+    }
+					\end{lstlisting}
+					El programa retorna:	
+						\begin{center}
+							\includegraphics[scale=0.8]{Imagenes/c7-02}								
+						\end{center}
+
+				\item {\bf Pregunta 6: Repeat Programming Exercise 6 with C\#.}
+
+					\lstset{language =[Sharp] C} 
+					\begin{lstlisting}[frame=single]
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Program p = new Program();
+            int a = 0, c;
+            c = (a) + p.func(--a);
+            System.Console.WriteLine("c = " + c);
+            System.Console.WriteLine("a = " + a);
+            a = 0;
+            c = p.func(--a) + (a);
+            System.Console.WriteLine("c = " + c);
+            System.Console.WriteLine("a = " + a);
+            Console.Read();
+        }
+        public int func(int c)
+        {
+            return c + 10;
+        }
+    }
+					\end{lstlisting}
+					El programa retorna:	
+						\begin{center}
+							\includegraphics[scale=0.8]{Imagenes/c7-03}								
+						\end{center}
+
+				\item {\bf Pregunta 9: Write a program in either Java, C++, or C\# that performs a large number of floating-point operations and an equal number of integer operations and compare the time required.}
+\lstset{language = java} 
+\begin{lstlisting}[frame=single]
+public class TestLP {
+    public static void main(String[] args) {        
+        int ae[] = new int[500000];
+        float af[] = new float[500000];
+        float  accf = 0;
+        long t1, t2, t3, te, tf;
+        int acce = 0;
+        Random r = new Random();
+        for(int i=0; i< 500000; i++){
+            af[i]=r.nextFloat();
+            ae[i]=r.nextInt(40);            
+        }        
+        t1= System.nanoTime();
+        for(int e:ae){
+            acce+=e;
+        }
+        t2=System.nanoTime();
+        for(float f:af){
+            accf+=f;
+        }
+        t3=System.nanoTime();
+        te=t2-t1;
+        tf=t3-t2;
+        System.out.println("Total Entero = " + acce);
+        System.out.println("Total Flotante = " + accf);
+        System.out.println("Tiempo Entero = " + te);
+        System.out.println("Tiempo Flotante = " + tf);
+        System.out.println(t1);
+        System.out.println(t2);
+        System.out.println(t3);
+    }    
+}
+\end{lstlisting}
+					El tiempo Entero es de alrededor de 7 milisegundos, mientras que el tiempo de flotantes es de alrededor de 0.5 milisegundos
 				\end{itemize}
+
 
 		\subsection{Capítulo 8: Estructuras de Control}	
 			\begin{itemize}
