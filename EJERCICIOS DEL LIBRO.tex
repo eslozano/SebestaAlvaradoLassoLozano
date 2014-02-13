@@ -30,8 +30,11 @@
 
 		\subsection{Capítulo 5: Nombres, Enlaces y Alcances}
 			\begin{itemize}
-				\item {\bf Pregunta 4}	
-				OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaa
+				\item {\bf Pregunta 4: Write a Python function that has subprograms nested three deep and in which each nested subprogram references variables defined in all of its enclosing subprogram}	
+					\begin{center}
+						\includegraphics[scale=0.5]{Imagenes/6.jpg}\\
+						NO EJECUTADO EN PYTHON: Variables no son declaradas globales
+					\end{center}
 
 				\item {\bf Pregunta 5: Write a C function that includes the following sequence of statements: x = 21;int x;x = 42; Run the program and explain the results. Rewrite the same code in C++ and Java and compare the results.}
 					\begin{itemize}
@@ -68,13 +71,19 @@
 							\end{center}
 						\item {Función en C\#}
 							\begin{center}
-								\includegraphics[scale=0.8]{Imagenes/4.jpg}\\
+								\includegraphics[scale=0.7]{Imagenes/4.jpg}\\
 								NO COMPILA: No es visible despues de la sentencia for.
 							\end{center}
 							Es de notar que los avisos que muestra el intérprete son diferentes en los dos casos anteriores, en C++ nos dice que no existe definición de la variable que se quiere usar y por tanto no hay ningún valor que mostrar. En la 									siguiente, en C\# en cambio nos informa que no estamos en el mismo contexto y que por tanto la variable no es visible ni alcanzable.
 					\end{itemize}
-				\item {\bf Pregunta 7}	
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaa
+				\item {\bf Pregunta 7: Write three functions in C or C++: one that declares a large array statically, one that declares the same large array on the stack, and one that creates the same large array from the heap. Call each of the subprograms a large 					number of times (at least 100,000) and output the time required by each. Explain the results.}	
+					\begin{center}
+						\includegraphics[scale=0.6]{Imagenes/5.jpg}\\
+						EN C: Diferentes tiempos para diferentes funciones
+					\end{center}
+					ARGUMENTO: Las variables y vectores en C ocupan un tamaño fijo, el cuál es establecido antes de ejecutar el programa, por tanto no pueden variarlo durante esta ejecución. Por medio de punteros se puede reservar o liberar memoria 							dinámicamente, es decir, según se necesite. La Función malloc sirve para solicitar un bloque de memoria del tamaño suministrado como parámetro.
+					Es notable que la petición MALLOC al querer reservar memoria toma más tiempo en su ejecución, pero también es importante entender que es una forma segura de programar, ya que estaremos seguros de que obtendremos la memoria que 							necesitemos para las variablemos que usemos, sin tener errores de memoria en tiempo de ejecución.
+					Así que aunque en la imagén veamos que toma más tiempo ejecutar MALLOC es preferible su uso, para no arriesgarnos a errores de memoria.
 		\end{itemize}
 
 
@@ -118,11 +127,15 @@
 
 		\subsection{Capítulo 9: SubProgramas}      
 			\begin{itemize}
-				\item {\bf Pregunta 1}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 5}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaaaaaa
-				\end{itemize}
+				\item {\bf Pregunta 1: Write a program in a language that you know to determine the ratio of the time required to pass a large array by reference and the time required to pass the same array by value. Make the array as large as possible on the 						machine and implementation you use. Pass the array as many times as necessary to get reasonably accurate timings of the passing operations.}
+					\begin{center}
+						\includegraphics[scale=0.5]{Imagenes/7.jpg}\\
+						POR REFERENCIA: Es notable que es más eficiente la ejecución al pasar un arreglo por referencia.\\
+						\includegraphics[scale=0.5]{Imagenes/8.jpg}\\
+						POR VALOR: Se modificó la función para que hiciera lo mismo que la anterior, y notamos un cambio en los tiempos pero pasando cada elemento del arreglo por valor.
+					\end{center}
+					
+			\end{itemize}
 
 
 % Continuar con los siguientes capítulos y ejercicios:
