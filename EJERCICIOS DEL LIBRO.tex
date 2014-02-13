@@ -89,13 +89,128 @@
 
 		\subsection{Capítulo 6: Tipos de Datos}
 			\begin{itemize}
-				\item {\bf Pregunta 1}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 2}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 7}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaa
-				\end{itemize}
+				\item {\bf Pregunta 1:Design a set of simple test programs to determine the type compatibility
+rules of a C compiler to which you have access. Write a report of your findings.}
+
+La estructura jerárquica de un programa normalmente se expresa utilizando reglas recursivas. Por ejemplo, se pueden dar las siguientes reglas como parte de la definición de expresiones:
+
+    Cualquier identificador es una expresión.
+    Cualquier número es una expresión.
+    Si expresión1 y expresión2 son expresiones, entonces también lo son:
+        expresión1 + expresión2
+        expresión1 * expresión2
+        ( expresión1 )
+
+Las reglas 1 y 2 son reglas básicas (no recursivas), en tanto que la regla 3 define expresiones en función de operadores aplicados a otras expresiones.
+
+La división entre análisis léxico y análisis sintáctico es algo arbitraria. Un factor para determinar la división es si una construcción del lenguaje fuente es inherentemente recursiva o no. Las construcciones léxicas no requieren recursión, mientras que las construcciones sintácticas suelen requerirla. No se requiere recursión para reconocer los identificadores, que suelen ser cadenas de letras y dígitos que comienzan con una letra. Normalmente, se reconocen los identificadores por el simple examen del flujo de entrada, esperando hasta encontrar un carácter que no sea ni letra ni dígito, y agrupando después todas las letras y dígitos encontrados hasta ese punto en un componente léxico llamado identificador.
+
+
+\begin{lstlisting}[frame = single] 
+
+int min(int a, int b) { 
+  if (a < b) return a;
+  return b;
+}
+
+	
+
+int min(string a, string b) { 
+  if (strcmp(a, b) < 0) return a;
+  return b;
+}
+
+
+double x,y;
+int a,b;
+char c[ ],d[ ];
+
+u = min(x,y);
+v = min(a,b); 
+w = min(c,d);
+t = min(x,c); 
+
+\end{lstlisting}
+Error al tratar de comparar un tipo de
+ dato double con un char[ ]
+
+					
+				\item {\bf Pregunta 2:Determine whether some C compiler to which you have access implements
+the free function}
+Memoria Dinámica 
+Es memoria que se reserva en tiempo de ejecución. Su principal ventaja frente a la estática, es que su tamaño puede variar durante la ejecución del programa. (En C, el programador es encargado de liberar esta memoria cuando no la utilice más). El uso de memoria dinámica es necesario cuando a priori no conocemos el número de datos/elementos a tratar.
+
+Memoria Estátiica
+Es el espacio en memoria que se crea al declarar variables de cualquier tipo de dato (primitivas [int,char...] o derivados [struct,matrices,punteros...]). La memoria que estas variables ocupan no puede cambiarse durante la ejecución y tampoco puede ser liberada manualmente.
+
+La función free sirve para liberar memoria que se asignó dinámicamente. Si el puntero es nulo, free no hace nada.
+
+
+					
+				\item {\bf Pregunta 7:Write a C program that does a large number of references to elements
+of two-dimensioned arrays, using only subscripting. Write a second
+program that does the same operations but uses pointers and pointer
+arithmetic for the storage-mapping function to do the array references.
+Compare the time efficiency of the two programs. Which of the two
+programs is likely to be more reliable? Why?}
+
+Programa 1
+							\begin{lstlisting}[frame = single] 
+#include <stdio.h>
+
+#include <conio.h>
+
+#include <string.h>
+
+void main (void)
+
+{
+
+char cadena[10][70];
+	for (i = 0; i <= 9; i++) {
+		for (j = 0; j<=69; j++) {
+		     printf("El valor es :%d",cadena[i][j] );
+
+		}						
+	}
+}
+							\end{lstlisting}
+Accedimos a los elementos de la matriz por medio de subindice 
+
+							Programa 2
+							\begin{lstlisting}[frame = single] 
+
+
+#define FILAS 10
+#define COLS 70
+
+int **matriz;
+matriz = (int **)malloc (FILAS*sizeof(int *)*COLS);
+ 
+for (i = 0; i <= FILAS; i++) {
+		for (j = 0; j<=COLS; j++) {
+		     printf("El valor es :%d",matriz** );
+
+		}						
+	}
+matriz[i] = (int *) malloc (COLS*sizeof(int));
+
+							\end{lstlisting}
+
+
+Accedimos a cada elemento de la matriz por medio de punteros 
+Lo mismo que en el caso de matrices unidimensionales, existen dos formas para acceder los elementos de matrices multidimensionales: mediante subíndices y mediante punteros. En cuanto a la primera, la forma de designar un elemento es: a[f][c], el primer subíndice indica la fila y el segundo la columna.
+
+En caso de una matriz bidimensional m[A][B], la posición Pa,b respecto del comienzo del elemento m[a][b] viene determinado por: Pa,b = ( a * B ) + b. Es decir: (fila x total de columnas) + columna
+
+
+
+
+
+
+
+						
+\end{itemize}
 
 		\subsection{Capítulo 7: Expresiones e Instrucciones de asignación}	
 			\begin{itemize}
@@ -322,12 +437,141 @@ public class TestLP {
 
 		\subsection{Capítulo 8: Estructuras de Control}	
 			\begin{itemize}
-				\item {\bf Pregunta 3}		
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 4}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaaaaa
-				\item {\bf Pregunta 5}
-					OJOOOOOOOOOO faltaaaaaaaaaaaaaaaaaaaaaaa
+				\item {\bf Pregunta 3: Rewrite the following code segment using a multiple-selection statement
+in the following languages:\\
+if ((k == 1) || (k == 2)) j = 2 * k - 1\\
+if ((k == 3) || (k == 5)) j = 3 * k + 1\\
+if (k == 4) j = 4 * k - 1\\
+if ((k == 6) || (k == 7) || (k == 8)) j = k - 2\\
+a. Fortran 95 (you’ll probably need to look this one up)\\
+b. Ada\\
+c. C, C++, Java, or C\\
+d. Python\\
+e. Ruby\\
+Assume all variables are integer type. Discuss the relative merits of the
+use of these languages for this particular code.}	
+
+Fortran  95
+\begin{lstlisting}[frame=single]
+if if ((k == 1) or (k == 2)) then 
+ j = 2 * k - 1
+elseif ((k == 3) or (k == 5)) then 
+j = 3 * k + 1
+elseif (k == 4) 
+then j = 4 * k - 1
+elseif ((k == 6) or (k == 7) or (k == 8))
+then  j = k - 2
+ end if 
+\end{lstlisting}
+
+C,C++,Java,or C
+\begin{lstlisting}[frame=single]
+if  ((k == 1) || (k == 2)) 
+ j = 2 * k - 1
+elseif ((k == 3) || (k == 5)) 
+j = 3 * k + 1
+elseif (k == 4) 
+j = 4 * k - 1
+elseif ((k == 6) || (k == 7) || (k == 8))
+ j = k - 2 
+\end{lstlisting}
+
+Python 
+\begin{lstlisting}[frame=single]
+if  ((k == 1) or (k == 2)) :
+ j = 2 * k - 1
+elseif ((k == 3) or (k == 5)): 
+j = 3 * k + 1
+elseif (k == 4) :
+j = 4 * k - 1
+elseif ((k == 6) or (k == 7) or (k == 8)):
+ j = k - 2 
+\end{lstlisting}
+
+Ruby
+\begin{lstlisting}[frame=single]
+if  ((k == 1) || (k == 2)) 
+ j = 2 * k - 1
+elseif ((k == 3) || (k == 5)) 
+j = 3 * k + 1
+elseif (k == 4) 
+j = 4 * k - 1
+elseif ((k == 6) || (k == 7) || (k == 8))
+ j = k - 2 
+end 
+\end{lstlisting}
+
+
+	
+					
+				\item {\bf Pregunta 4:Consider the following C program segment. Rewrite it using no gotos or breaks.\\
+j = -3;\\
+for (i = 0; i < 3; i++) {\\
+	switch (j + 2) {\\
+		case 3:\\
+		case 2: j--; break;\\
+		case 0: j += 2; break;\\
+		default: j = 0;\\
+	}\\
+	if (j > 0) break;\\
+	     j = 3 - i\\
+}\\
+}
+\begin{lstlisting}[frame=single]
+j = -3;
+for (i = 0; i < 3; i++) {
+		if (j + 2) == 3 
+
+		elseif (j + 2) ==2 {
+			j--;
+			return ;
+		}
+		elseif (j + 2) == 0{
+			 j += 2;
+			 return;
+		}
+		else 
+			 j = 0;
+	}
+	if ((j + 2) > 0)
+	 return;
+	 j = 3 - i
+}
+
+\end{lstlisting}
+
+
+
+				\item {\bf Pregunta 5:In a letter to the editor of CACM, Rubin (1987) uses the following code
+segment as evidence that the readability of some code with gotos is better
+than the equivalent code without gotos. This code finds the first row
+of an n by n integer matrix named x that has nothing but zero values.\\
+for (i = 1; i <= n; i++) {\\
+for (j = 1; j <= n; j++)\\
+if (x[i][j] != 0)\\
+goto reject;\\
+println ('First all-zero row is:', i);\\
+break;\\
+reject:\\
+}\\
+
+Rewrite this code without gotos in one of the following languages: C,
+C++, Java, C, or Ada. Compare the readability of your code to that of
+the example code.}
+
+\begin{lstlisting}[frame=single]
+for (i = 1; i <= n; i++) {
+	for (j = 1; j <= n; j++){
+		if (x[i][j] != 0)
+			continue;
+	}
+System.out.Println('First all-zero row is:'+ i);
+break;
+
+}
+\end{lstlisting}
+
+					
 			\end{itemize}
 
 		\subsection{Capítulo 9: SubProgramas}      
