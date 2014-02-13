@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.16)  13 FEB 2014 04:07
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.12.11)  13 FEB 2014 07:36
 entering extended mode
-**EJERCICIOS*DEL*LIBRO.tex
-("C:\Users\Vaio\.ssh\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.tex"
+**C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/EJERCICIOS*DEL*LIBRO.
+tex
+
+("C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/EJERCICIOS DEL LIBRO.
+tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -62,7 +65,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count90
 \lst@gtempboxa=\box26
 \lst@token=\toks16
@@ -76,13 +79,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \lst@lineno=\count95
 \lst@maxwidth=\dimen114
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 \c@lstnumber=\count96
 \lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
 Package: listings 2013/08/26 1.5b (Carsten Heinz)
@@ -487,7 +490,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-("C:\Users\Vaio\.ssh\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.aux")
+("C:\Users\NiAS\Documents\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.
+aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
@@ -502,6 +506,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -537,7 +542,7 @@ LaTeX Font Info:    ... okay on input line 23.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count112
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
 \scratchdimen=\dimen122
@@ -565,11 +570,13 @@ LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
 
-("C:\Users\Vaio\.ssh\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.out")
-("C:\Users\Vaio\.ssh\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.out")
+("C:\Users\NiAS\Documents\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.
+out")
+("C:\Users\NiAS\Documents\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.
+out")
 \@outlinefile=\write3
 LaTeX Font Info:    Try loading font information for U+msa on input line 25.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 25.
@@ -591,23 +598,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Vaio/.ssh/libroS
-ebestaLozanoLassoAlvarado/Imagenes/6.jpg>] <Imagenes/1.jpg, id=43, 355.3275pt x
- 405.01312pt>
+{C:/Users/NiAS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/NiA
+S/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/6.jpg>]
+<Imagenes/1.jpg, id=43, 355.3275pt x 405.01312pt>
 File: Imagenes/1.jpg Graphic file (type jpg)
-
-<use Imagenes/1.jpg>
+ <use Imagenes/1.jpg>
 Package pdftex.def Info: Imagenes/1.jpg used on input line 43.
 (pdftex.def)             Requested size: 106.59906pt x 121.50487pt.
- <Imagenes/2.jpg, id=44, 307.1475pt x 174.6525pt>
-File: Imagenes/2.jpg Graphic file (type jpg)
 
-<use Imagenes/2.jpg>
+<Imagenes/2.jpg, id=44, 307.1475pt x 174.6525pt>
+File: Imagenes/2.jpg Graphic file (type jpg)
+ <use Imagenes/2.jpg>
 Package pdftex.def Info: Imagenes/2.jpg used on input line 59.
 (pdftex.def)             Requested size: 276.43019pt x 157.18579pt.
- [2 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/1.jpg> <C:/Use
-rs/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/2.jpg>] <Imagenes/3.jpg, 
-id=50, 406.51875pt x 328.97906pt>
+ [2 <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/1.jpg> <C
+:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/2.jpg>]
+<Imagenes/3.jpg, id=50, 406.51875pt x 328.97906pt>
 File: Imagenes/3.jpg Graphic file (type jpg)
  <use Imagenes/3.jpg>
 Package pdftex.def Info: Imagenes/3.jpg used on input line 69.
@@ -618,157 +624,145 @@ File: Imagenes/4.jpg Graphic file (type jpg)
  <use Imagenes/4.jpg>
 Package pdftex.def Info: Imagenes/4.jpg used on input line 74.
 (pdftex.def)             Requested size: 358.3363pt x 203.40854pt.
- [3 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/3.jpg> <C:/Use
-rs/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/4.jpg>]
+ [3 <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/3.jpg> <C
+:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/4.jpg>]
 <Imagenes/5.jpg, id=56, 502.0356pt x 392.1852pt>
 File: Imagenes/5.jpg Graphic file (type jpg)
  <use Imagenes/5.jpg>
 Package pdftex.def Info: Imagenes/5.jpg used on input line 81.
 (pdftex.def)             Requested size: 301.22368pt x 235.31293pt.
- [4 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/5.jpg>] [5]
-Overfull \hbox (61.42737pt too wide) in paragraph at lines 143--145
-\T1/cmr/m/n/12 de cual-quier ti-po de da-to (pri-mi-ti-vas [int,char...] o de-r
-i-va-dos [struct,matrices,punteros...]).
- []
-
-[6]
-Overfull \hbox (41.06975pt too wide) in paragraph at lines 172--174
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (12.87639pt too wide) in paragraph at lines 192--194
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+ [4 <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/5.jpg>] [
+5]
+[6] (C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
-) [7]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 221.
+)
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 198.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 222
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 199
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 222.
+LaTeX Font Info:    No file OMScmss.fd. on input line 199.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textasteriskcentered' on input line 222.
+(Font)              for symbol `textasteriskcentered' on input line 199.
 
-[8] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[7] (C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-[9] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[8] [9]
+(C:\Users\NiAS\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-[10] <Imagenes/c7-02.png, id=244, 569.87906pt x 158.09062pt>
+[10] <Imagenes/c7-02.png, id=246, 569.87906pt x 158.09062pt>
 File: Imagenes/c7-02.png Graphic file (type png)
 
 <use Imagenes/c7-02.png>
-Package pdftex.def Info: Imagenes/c7-02.png used on input line 365.
-(pdftex.def)             Requested size: 455.90385pt x 126.47266pt.
+Package pdftex.def Info: Imagenes/c7-02.png used on input line 342.
+(pdftex.def)             Requested size: 398.91261pt x 110.66267pt.
 
-Overfull \hbox (67.02487pt too wide) in paragraph at lines 365--366
+Overfull \hbox (10.03363pt too wide) in paragraph at lines 342--343
  [] 
  []
 
-[11 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/c7-02.png>]
-<Imagenes/c7-03.png, id=279, 569.87906pt x 130.98938pt>
+<Imagenes/c7-03.png, id=248, 569.87906pt x 130.98938pt>
 File: Imagenes/c7-03.png Graphic file (type png)
 
 <use Imagenes/c7-03.png>
-Package pdftex.def Info: Imagenes/c7-03.png used on input line 395.
-(pdftex.def)             Requested size: 455.90385pt x 104.79163pt.
+Package pdftex.def Info: Imagenes/c7-03.png used on input line 372.
+(pdftex.def)             Requested size: 398.91261pt x 91.69193pt.
 
-Overfull \hbox (67.02487pt too wide) in paragraph at lines 395--396
+Overfull \hbox (10.03363pt too wide) in paragraph at lines 372--373
  [] 
  []
 
-[12 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/c7-03.png>]
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 507--520
+[11 <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/c7-02.png
+> <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/c7-03.png>]
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 484--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--520
+Underfull \hbox (badness 10000) in paragraph at lines 484--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--520
+Underfull \hbox (badness 10000) in paragraph at lines 484--497
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 545--557
+Underfull \hbox (badness 10000) in paragraph at lines 522--534
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 545--557
+Underfull \hbox (badness 10000) in paragraph at lines 522--534
 
  []
 
-[15] <Imagenes/7.jpg, id=399, 502.12593pt x 217.5628pt>
+[15] <Imagenes/7.jpg, id=394, 502.12593pt x 217.5628pt>
 File: Imagenes/7.jpg Graphic file (type jpg)
  <use Imagenes/7.jpg>
-Package pdftex.def Info: Imagenes/7.jpg used on input line 581.
+Package pdftex.def Info: Imagenes/7.jpg used on input line 558.
 (pdftex.def)             Requested size: 251.06235pt x 108.78113pt.
 
-<Imagenes/8.jpg, id=400, 512.66531pt x 231.86626pt>
+<Imagenes/8.jpg, id=395, 512.66531pt x 231.86626pt>
 File: Imagenes/8.jpg Graphic file (type jpg)
  <use Imagenes/8.jpg>
-Package pdftex.def Info: Imagenes/8.jpg used on input line 583.
+Package pdftex.def Info: Imagenes/8.jpg used on input line 560.
 (pdftex.def)             Requested size: 256.33202pt x 115.93283pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
 
-[16 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/7.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 597.
+[16 <C:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/7.jpg> <C
+:/Users/NiAS/Documents/libroSebestaLozanoLassoAlvarado/Imagenes/8.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
 
-[17 <C:/Users/Vaio/.ssh/libroSebestaLozanoLassoAlvarado/Imagenes/8.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 597.
-
-("C:\Users\Vaio\.ssh\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 597.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 597.
+("C:\Users\NiAS\Documents\libroSebestaLozanoLassoAlvarado\EJERCICIOS DEL LIBRO.
+aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
 Package rerunfilecheck Info: File `EJERCICIOS*DEL*LIBRO.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
+
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 597.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
  ) 
 Here is how much of TeX's memory you used:
- 9014 strings out of 493921
- 126258 string characters out of 3144878
- 246089 words of memory out of 3000000
+ 8998 strings out of 493921
+ 126207 string characters out of 3144878
+ 242525 words of memory out of 3000000
  11871 multiletter control sequences out of 15000+200000
  21742 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,49p,770b,2060s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-csi1095.pk> <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecss1095.pk> <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecsx1095.pk> <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Vaio\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Vaio\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Vai
-o\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\
-Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440
-.pk> <C:\Users\Vaio\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+ 29i,6n,49p,826b,2147s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
+csi1095.pk> <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecss1095.pk> <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecsx1095.pk> <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\NiAS\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\NiAS\AppData
+\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\NiA
+S\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\
+Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440
+.pk> <C:\Users\NiAS\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ecrm2074.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb>
-Output written on "EJERCICIOS DEL LIBRO.pdf" (17 pages, 717062 bytes).
+Output written on "EJERCICIOS DEL LIBRO.pdf" (16 pages, 713553 bytes).
 PDF statistics:
- 902 PDF objects out of 1000 (max. 8388607)
- 318 named destinations out of 1000 (max. 500000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 302 named destinations out of 1000 (max. 500000)
  107 words of extra memory for PDF output out of 10000 (max. 10000000)
 
